@@ -1,0 +1,244 @@
+/* Typography Styles */
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.2;
+    color: #1f2937;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+h5 {
+    font-size: 1.1rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #6b7280;
+}
+
+a {
+    color: #6366f1;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #4f46e5;
+    text-decoration: underline;
+}
+
+/* Text Utilities */
+.text-sm {
+    font-size: 0.875rem;
+}
+
+.text-lg {
+    font-size: 1.125rem;
+}
+
+.text-xl {
+    font-size: 1.25rem;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-primary {
+    color: #1f2937;
+}
+
+.text-secondary {
+    color: #6b7280;
+}
+
+.text-muted {
+    color: #9ca3af;
+}
+
+/* Specific Text Elements */
+.welcome-line {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.date-info {
+    font-size: 1rem;
+    color: #6b7280;
+}
+
+.timezone-info {
+    font-size: 0.9rem;
+    color: #9ca3af;
+}
+
+.snap-text {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #1f2937;
+    margin: 0.5rem 0;
+}
+
+.snap-from {
+    font-size: 0.85rem;
+    color: #9ca3af;
+    margin-top: 0.25rem;
+}
+
+.beast-babe-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-top: 0.5rem;
+}
+
+.beast-babe-reason {
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin-top: 0.25rem;
+}
+
+.curator-name {
+    font-size: 0.95rem;
+    color: #6b7280;
+    margin: 0.5rem 0;
+}
+
+.case-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 0.75rem 0 0.25rem 0;
+}
+
+.client-name {
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin-bottom: 0.75rem;
+}
+
+.article-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.25rem;
+}
+
+.article-source {
+    font-size: 0.85rem;
+    color: #9ca3af;
+}
+
+.article-item {
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.article-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.stat-label {
+    display: block;
+    font-size: 0.85rem;
+    color: #6b7280;
+    margin-bottom: 0.25rem;
+}
+
+.stat-number {
+    display: block;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #6366f1;
+}
+
+.pipeline-stat {
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.pipeline-stat:last-child {
+    border-bottom: none;
+}
+
+.event-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+    font-size: 0.95rem;
+}
+
+.event-icon {
+    font-size: 1.25rem;
+}
+
+.pulse-indicator {
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.pulse-indicator:last-child {
+    border-bottom: none;
+}
+
+.pulse-indicator label {
+    display: block;
+    font-size: 0.85rem;
+    color: #6b7280;
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+}
+
+.trend-chart {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #10b981;
+}
+
+.energy-meter {
+    font-size: 0.95rem;
+    font-family: monospace;
+}

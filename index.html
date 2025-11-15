@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Wireframe - Homepage</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/typography.css">
+    <link rel="stylesheet" href="styles/components.css">
+</head>
+<body>
+    <div class="dashboard-wrapper">
+        <!-- Top Bar -->
+        <header class="top-bar">
+            <div class="top-bar-left">
+                <div class="logo">
+                    <div class="logo-placeholder">LOGO</div>
+                </div>
+                <nav class="navigation">
+                    <a href="index.html" class="nav-item active">Home</a>
+                    <a href="pages/snaps.html" class="nav-item">Snaps</a>
+                    <a href="pages/resources.html" class="nav-item">Resources</a>
+                    <a href="pages/work.html" class="nav-item">Work</a>
+                    <a href="pages/team.html" class="nav-item">Team</a>
+                    <a href="pages/vibes.html" class="nav-item">Vibes</a>
+                </nav>
+            </div>
+            <div class="top-bar-right">
+                <div class="profile-avatar dropdown">
+                    <div class="avatar-placeholder">A</div>
+                    <div class="dropdown-menu">
+                        <a href="pages/profile.html">Profile</a>
+                        <a href="#">Settings</a>
+                        <a href="#">Notifications</a>
+                        <a href="#">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Hero Area -->
+            <section class="hero-area">
+                <div class="hero-content">
+                    <h1 class="hero-headline">Welcome to Your Dashboard</h1>
+                    <p class="hero-subline">Stay connected with your team, celebrate wins, and keep the vibes alive</p>
+                </div>
+                <div class="hero-illustration">
+                    <div class="placeholder-3d">3D Avatar</div>
+                </div>
+                <div class="quick-actions">
+                    <button class="btn btn-primary">+ Add Snap</button>
+                    <button class="btn btn-secondary">+ Add Project</button>
+                    <button class="btn btn-secondary">+ Add Event</button>
+                </div>
+            </section>
+
+            <!-- Daily Essentials Row -->
+            <section class="row-section">
+                <h2 class="section-title">Daily Essentials</h2>
+                <div class="tiles-grid">
+                    <!-- Personalized Dashboard Tile -->
+                    <div class="tile tile-card">
+                        <div class="tile-header">
+                            <h3>Personalized Dashboard</h3>
+                        </div>
+                        <div class="tile-content">
+                            <p class="welcome-line">Welcome back, [Name]</p>
+                            <p class="date-info">Saturday, November 15, 2025</p>
+                            <p class="timezone-info">EST (UTC -5)</p>
+                        </div>
+                    </div>
+
+                    <!-- Today's Events Tile -->
+                    <div class="tile tile-card">
+                        <div class="tile-header">
+                            <h3>Today's Events</h3>
+                        </div>
+                        <div class="tile-content">
+                            <div class="event-item">
+                                <span class="event-icon">🎂</span> Birthday
+                            </div>
+                            <div class="event-item">
+                                <span class="event-icon">💍</span> Anniversary
+                            </div>
+                            <div class="event-item">
+                                <span class="event-icon">🌴</span> OOO
+                            </div>
+                            <div class="event-item">
+                                <span class="event-icon">📅</span> 3 Meetings
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Team Pulse Tile -->
+                    <div class="tile tile-card">
+                        <div class="tile-header">
+                            <h3>Team Pulse</h3>
+                        </div>
+                        <div class="tile-content">
+                            <div class="pulse-indicator">
+                                <label>Happiness</label>
+                                <div class="trend-chart">📈 +12%</div>
+                            </div>
+                            <div class="pulse-indicator">
+                                <label>Energy</label>
+                                <div class="energy-meter">███████░░</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Actions Tile -->
+                    <div class="tile tile-card">
+                        <div class="tile-header">
+                            <h3>Quick Actions</h3>
+                        </div>
+                        <div class="tile-content">
+                            <button class="quick-action-btn">Start Discussion</button>
+                            <button class="quick-action-btn">Submit Snap</button>
+                            <button class="quick-action-btn">Add Resource</button>
+                            <button class="quick-action-btn">Book OOO</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Culture Row -->
+            <section class="row-section">
+                <h2 class="section-title">Culture & Vibes</h2>
+                <div class="tiles-grid">
+                    <!-- Snaps Preview -->
+                    <div class="tile tile-wide">
+                        <div class="tile-header">
+                            <h3>Recent Snaps</h3>
+                        </div>
+                        <div class="tile-content">
+                            <div class="snaps-preview">
+                                <div class="snap-card">
+                                    <div class="snap-avatar">👤</div>
+                                    <p class="snap-text">Great work on the project!</p>
+                                    <p class="snap-from">From: Team</p>
+                                </div>
+                                <div class="snap-card">
+                                    <div class="snap-avatar">👤</div>
+                                    <p class="snap-text">Amazing presentation skills</p>
+                                    <p class="snap-from">From: Manager</p>
+                                </div>
+                                <div class="snap-card">
+                                    <div class="snap-avatar">👤</div>
+                                    <p class="snap-text">Love your energy in meetings</p>
+                                    <p class="snap-from">From: Team</p>
+                                </div>
+                            </div>
+                            <button class="btn btn-secondary">+ Add Snap</button>
+                        </div>
+                    </div>
+
+                    <!-- Beast Babe -->
+                    <div class="tile tile-card">
+                        <div class="tile-header">
+                            <h3>Beast Babe 🏆</h3>
+                        </div>
+                        <div class="tile-content">
+                            <div class="beast-babe-image">📸</div>
+                            <p class="beast-babe-name">Sarah Johnson</p>
+                            <p class="beast-babe-reason">Top contributor this week</p>
+                        </div>
+                    </div>
+
+                    <!-- Weekly Playlist -->
+                    <div class="tile tile-card">
+                        <div class="tile-header">
+                            <h3>Weekly Playlist 🎵</h3>
+                        </div>
+                        <div class="tile-content">
+                            <div class="playlist-cover">🎶</div>
+                            <p class="curator-name">Curated by: Alex Chen</p>
+                            <button class="btn btn-secondary">▶ Play</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Work Row -->
+            <section class="row-section">
+                <h2 class="section-title">Work in Progress</h2>
+                <div class="tiles-grid">
+                    <!-- Latest Work Showcase -->
+                    <div class="tile tile-card">
+                        <div class="tile-header">
+                            <h3>Latest Showcase</h3>
+                        </div>
+                        <div class="tile-content">
+                            <div class="work-thumbnail">📊</div>
+                            <p class="case-title">Mobile App Redesign</p>
+                            <p class="client-name">Client: TechCorp</p>
+                            <a href="#">View Case →</a>
+                        </div>
+                    </div>
+
+                    <!-- Pipeline Snapshot -->
+                    <div class="tile tile-card">
+                        <div class="tile-header">
+                            <h3>Pipeline Snapshot</h3>
+                        </div>
+                        <div class="tile-content">
+                            <div class="pipeline-stat">
+                                <span class="stat-label">New Business</span>
+                                <span class="stat-number">5</span>
+                            </div>
+                            <div class="pipeline-stat">
+                                <span class="stat-label">In Progress</span>
+                                <span class="stat-number">12</span>
+                            </div>
+                            <div class="pipeline-stat">
+                                <span class="stat-label">Completed</span>
+                                <span class="stat-number">24</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Must Reads -->
+                    <div class="tile tile-card">
+                        <div class="tile-header">
+                            <h3>Must Reads 📚</h3>
+                        </div>
+                        <div class="tile-content">
+                            <div class="article-item">
+                                <p class="article-title">Design Trends 2025</p>
+                                <p class="article-source">Design Weekly</p>
+                            </div>
+                            <div class="article-item">
+                                <p class="article-title">Team Collaboration Best Practices</p>
+                                <p class="article-source">Leadership Insights</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Knowledge Row -->
+            <section class="row-section">
+                <h2 class="section-title">Knowledge & Resources</h2>
+                <div class="tiles-grid">
+                    <!-- Resource Categories -->
+                    <div class="categories-grid">
+                        <div class="category-card">Communication</div>
+                        <div class="category-card">Creative</div>
+                        <div class="category-card">Learning</div>
+                        <div class="category-card">Research</div>
+                        <div class="category-card">Strategy</div>
+                        <div class="category-card">Tools</div>
+                    </div>
+                </div>
+
+                <!-- Global Search -->
+                <div class="global-search">
+                    <input type="text" placeholder="🔍 Search all resources..." class="search-input">
+                    <div class="autocomplete-suggestions">
+                        <p class="suggestion">Design System</p>
+                        <p class="suggestion">Brand Guidelines</p>
+                        <p class="suggestion">Project Templates</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="#">Quick Links</a>
+                    <a href="#">Help</a>
+                    <a href="#">Feedback</a>
+                </div>
+                <div class="footer-branding">
+                    <p>© 2025 Dashboard. Built with team vibes in mind.</p>
+                </div>
+                <div class="footer-admin">
+                    <a href="#">Admin Panel (only for admins)</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/interactions.js"></script>
+</body>
+</html>
