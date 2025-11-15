@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Wireframe - Resources</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/typography.css">
+    <link rel="stylesheet" href="../styles/components.css">
+</head>
+<body>
+    <div class="dashboard-wrapper">
+        <!-- Top Bar -->
+        <header class="top-bar">
+            <div class="top-bar-left">
+                <div class="logo">
+                    <div class="logo-placeholder">LOGO</div>
+                </div>
+                <nav class="navigation">
+                    <a href="../index.html" class="nav-item">Home</a>
+                    <a href="snaps.html" class="nav-item">Snaps</a>
+                    <a href="resources.html" class="nav-item active">Resources</a>
+                    <a href="work.html" class="nav-item">Work</a>
+                    <a href="team.html" class="nav-item">Team</a>
+                    <a href="vibes.html" class="nav-item">Vibes</a>
+                </nav>
+            </div>
+            <div class="top-bar-right">
+                <div class="profile-avatar dropdown">
+                    <div class="avatar-placeholder">A</div>
+                    <div class="dropdown-menu">
+                        <a href="profile.html">Profile</a>
+                        <a href="#">Settings</a>
+                        <a href="#">Notifications</a>
+                        <a href="#">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Page Header -->
+            <div class="page-header">
+                <h1 class="page-title">Resources</h1>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="global-search">
+                <input type="text" placeholder="🔍 Search all resources..." class="search-input">
+                <div class="autocomplete-suggestions">
+                    <p class="suggestion">Design System</p>
+                    <p class="suggestion">Brand Guidelines</p>
+                    <p class="suggestion">Project Templates</p>
+                    <p class="suggestion">Best Practices</p>
+                </div>
+            </div>
+
+            <!-- Category Tabs -->
+            <div style="margin: 2rem 0; display: flex; gap: 1rem; border-bottom: 2px solid #e5e7eb; flex-wrap: wrap;">
+                <button class="tab active" onclick="switchTab('all-resources')" style="padding: 1rem; border: none; background: none; cursor: pointer; font-weight: 600; color: #6366f1; border-bottom: 3px solid #6366f1; margin-bottom: -2px;">All</button>
+                <button class="tab" onclick="switchTab('communication')" style="padding: 1rem; border: none; background: none; cursor: pointer; font-weight: 600; color: #6b7280;">Communication</button>
+                <button class="tab" onclick="switchTab('creative')" style="padding: 1rem; border: none; background: none; cursor: pointer; font-weight: 600; color: #6b7280;">Creative</button>
+                <button class="tab" onclick="switchTab('learning')" style="padding: 1rem; border: none; background: none; cursor: pointer; font-weight: 600; color: #6b7280;">Learning</button>
+                <button class="tab" onclick="switchTab('tools')" style="padding: 1rem; border: none; background: none; cursor: pointer; font-weight: 600; color: #6b7280;">Tools</button>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 250px; gap: 2rem; margin-top: 2rem;">
+                <!-- Main Resources Grid -->
+                <section>
+                    <div id="all-resources" class="tab-content" style="display: block;">
+                        <div class="gallery-grid">
+                            <div class="gallery-item">
+                                <div class="gallery-image">📐</div>
+                                <div class="gallery-info">
+                                    <div class="gallery-title">Design System</div>
+                                    <div style="font-size: 0.8rem; color: #9ca3af; margin-top: 0.25rem;">
+                                        <span class="badge">Design</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="gallery-item">
+                                <div class="gallery-image">📋</div>
+                                <div class="gallery-info">
+                                    <div class="gallery-title">Brand Guidelines</div>
+                                    <div style="font-size: 0.8rem; color: #9ca3af; margin-top: 0.25rem;">
+                                        <span class="badge badge-primary">Brand</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="gallery-item">
+                                <div class="gallery-image">📑</div>
+                                <div class="gallery-info">
+                                    <div class="gallery-title">Project Templates</div>
+                                    <div style="font-size: 0.8rem; color: #9ca3af; margin-top: 0.25rem;">
+                                        <span class="badge badge-success">Template</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="gallery-item">
+                                <div class="gallery-image">💡</div>
+                                <div class="gallery-info">
+                                    <div class="gallery-title">Best Practices</div>
+                                    <div style="font-size: 0.8rem; color: #9ca3af; margin-top: 0.25rem;">
+                                        <span class="badge badge-warning">Guide</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="gallery-item">
+                                <div class="gallery-image">🎨</div>
+                                <div class="gallery-info">
+                                    <div class="gallery-title">Color Palettes</div>
+                                    <div style="font-size: 0.8rem; color: #9ca3af; margin-top: 0.25rem;">
+                                        <span class="badge">Design</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="gallery-item">
+                                <div class="gallery-image">📚</div>
+                                <div class="gallery-info">
+                                    <div class="gallery-title">Documentation</div>
+                                    <div style="font-size: 0.8rem; color: #9ca3af; margin-top: 0.25rem;">
+                                        <span class="badge badge-success">Docs</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Sidebar -->
+                <aside class="filter-sidebar">
+                    <div class="filter-group">
+                        <div class="filter-title">Recently Viewed</div>
+                        <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                            <a href="#" style="padding: 0.75rem; background-color: #f8f9fa; border-radius: 6px; text-decoration: none; color: #6366f1; font-size: 0.9rem; transition: all 0.2s ease;" onmouseover="this.style.backgroundColor='#e0e7ff';" onmouseout="this.style.backgroundColor='#f8f9fa';">Design System</a>
+                            <a href="#" style="padding: 0.75rem; background-color: #f8f9fa; border-radius: 6px; text-decoration: none; color: #6366f1; font-size: 0.9rem; transition: all 0.2s ease;" onmouseover="this.style.backgroundColor='#e0e7ff';" onmouseout="this.style.backgroundColor='#f8f9fa';">Brand Guidelines</a>
+                            <a href="#" style="padding: 0.75rem; background-color: #f8f9fa; border-radius: 6px; text-decoration: none; color: #6366f1; font-size: 0.9rem; transition: all 0.2s ease;" onmouseover="this.style.backgroundColor='#e0e7ff';" onmouseout="this.style.backgroundColor='#f8f9fa';">Best Practices</a>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <div class="filter-title">Most Used This Month</div>
+                        <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                            <a href="#" style="padding: 0.75rem; background-color: #f8f9fa; border-radius: 6px; text-decoration: none; color: #6366f1; font-size: 0.9rem; transition: all 0.2s ease;" onmouseover="this.style.backgroundColor='#e0e7ff';" onmouseout="this.style.backgroundColor='#f8f9fa';">
+                                <div style="font-weight: 600;">Project Templates</div>
+                                <div style="font-size: 0.8rem; color: #9ca3af;">24 views</div>
+                            </a>
+                            <a href="#" style="padding: 0.75rem; background-color: #f8f9fa; border-radius: 6px; text-decoration: none; color: #6366f1; font-size: 0.9rem; transition: all 0.2s ease;" onmouseover="this.style.backgroundColor='#e0e7ff';" onmouseout="this.style.backgroundColor='#f8f9fa';">
+                                <div style="font-weight: 600;">Documentation</div>
+                                <div style="font-size: 0.8rem; color: #9ca3af;">19 views</div>
+                            </a>
+                            <a href="#" style="padding: 0.75rem; background-color: #f8f9fa; border-radius: 6px; text-decoration: none; color: #6366f1; font-size: 0.9rem; transition: all 0.2s ease;" onmouseover="this.style.backgroundColor='#e0e7ff';" onmouseout="this.style.backgroundColor='#f8f9fa';">
+                                <div style="font-weight: 600;">Color Palettes</div>
+                                <div style="font-size: 0.8rem; color: #9ca3af;">15 views</div>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="#">Quick Links</a>
+                    <a href="#">Help</a>
+                    <a href="#">Feedback</a>
+                </div>
+                <div class="footer-branding">
+                    <p>© 2025 Dashboard. Built with team vibes in mind.</p>
+                </div>
+                <div class="footer-admin">
+                    <a href="#">Admin Panel (only for admins)</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../js/interactions.js"></script>
+</body>
+</html>
