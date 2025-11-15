@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Wireframe - Vibes</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/typography.css">
+    <link rel="stylesheet" href="../styles/components.css">
+</head>
+<body>
+    <div class="dashboard-wrapper">
+        <!-- Top Bar -->
+        <header class="top-bar">
+            <div class="top-bar-left">
+                <div class="logo">
+                    <div class="logo-placeholder">LOGO</div>
+                </div>
+                <nav class="navigation">
+                    <a href="../index.html" class="nav-item">Home</a>
+                    <a href="snaps.html" class="nav-item">Snaps</a>
+                    <a href="resources.html" class="nav-item">Resources</a>
+                    <a href="work.html" class="nav-item">Work</a>
+                    <a href="team.html" class="nav-item">Team</a>
+                    <a href="vibes.html" class="nav-item active">Vibes</a>
+                </nav>
+            </div>
+            <div class="top-bar-right">
+                <div class="profile-avatar dropdown">
+                    <div class="avatar-placeholder">A</div>
+                    <div class="dropdown-menu">
+                        <a href="profile.html">Profile</a>
+                        <a href="#">Settings</a>
+                        <a href="#">Notifications</a>
+                        <a href="#">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Page Header -->
+            <div class="page-header">
+                <h1 class="page-title">Vibes</h1>
+            </div>
+
+            <!-- Header Cards Section -->
+            <section class="row-section">
+                <div class="tiles-grid">
+                    <!-- Beast Babe -->
+                    <div class="tile tile-card">
+                        <div class="tile-header">
+                            <h3>Beast Babe 🏆</h3>
+                        </div>
+                        <div class="tile-content">
+                            <div class="beast-babe-image">👑</div>
+                            <p class="beast-babe-name">Sarah Johnson</p>
+                            <p class="beast-babe-reason">Most snaps given this week</p>
+                            <button class="btn btn-secondary" style="margin-top: 1rem;">View Profile →</button>
+                        </div>
+                    </div>
+
+                    <!-- Question of the Week -->
+                    <div class="tile tile-card">
+                        <div class="tile-header">
+                            <h3>Question of the Week ❓</h3>
+                        </div>
+                        <div class="tile-content">
+                            <p style="font-size: 1rem; font-weight: 500; margin-bottom: 1rem; line-height: 1.6;">
+                                "What's one thing that made you happy at work this week?"
+                            </p>
+                            <button class="btn btn-primary">Answer Question</button>
+                            <p style="font-size: 0.85rem; color: #9ca3af; margin-top: 1rem;">24 responses so far</p>
+                        </div>
+                    </div>
+
+                    <!-- Weekly Playlist -->
+                    <div class="tile tile-card">
+                        <div class="tile-header">
+                            <h3>Weekly Playlist 🎵</h3>
+                        </div>
+                        <div class="tile-content">
+                            <div class="playlist-cover">🎶</div>
+                            <p class="curator-name">Curated by: Alex Chen</p>
+                            <p style="font-size: 0.9rem; color: #6b7280; margin-top: 0.5rem;">15 songs • 58 min</p>
+                            <button class="btn btn-primary" style="margin-top: 1rem;">▶ Play</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Past Playlists Section -->
+            <section class="row-section">
+                <h2 class="section-title">Past Playlists</h2>
+                <div class="tiles-grid">
+                    <div class="tile tile-card">
+                        <div style="width: 100%; aspect-ratio: 1; background: linear-gradient(135deg, #8b5cf6, #d946ef); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; margin-bottom: 1rem;">
+                            🎸
+                        </div>
+                        <p style="font-weight: 600; color: #1f2937;">Chill Vibes Mix</p>
+                        <p style="font-size: 0.9rem; color: #6b7280; margin-top: 0.25rem;">Week of Nov 8</p>
+                        <button class="btn btn-secondary" style="width: 100%; margin-top: 1rem;">▶ Play</button>
+                    </div>
+
+                    <div class="tile tile-card">
+                        <div style="width: 100%; aspect-ratio: 1; background: linear-gradient(135deg, #f59e0b, #ef4444); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; margin-bottom: 1rem;">
+                            🎤
+                        </div>
+                        <p style="font-weight: 600; color: #1f2937;">Productivity Mode</p>
+                        <p style="font-size: 0.9rem; color: #6b7280; margin-top: 0.25rem;">Week of Nov 1</p>
+                        <button class="btn btn-secondary" style="width: 100%; margin-top: 1rem;">▶ Play</button>
+                    </div>
+
+                    <div class="tile tile-card">
+                        <div style="width: 100%; aspect-ratio: 1; background: linear-gradient(135deg, #06b6d4, #3b82f6); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; margin-bottom: 1rem;">
+                            🎹
+                        </div>
+                        <p style="font-weight: 600; color: #1f2937;">Motivation Monday</p>
+                        <p style="font-size: 0.9rem; color: #6b7280; margin-top: 0.25rem;">Week of Oct 25</p>
+                        <button class="btn btn-secondary" style="width: 100%; margin-top: 1rem;">▶ Play</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Past Winners Section -->
+            <section class="row-section">
+                <h2 class="section-title">Beast Babe Archives</h2>
+                <div class="tiles-grid">
+                    <div class="tile tile-card">
+                        <div class="beast-babe-image">🌟</div>
+                        <p style="font-weight: 600; color: #1f2937;">Mike Chen</p>
+                        <p style="font-size: 0.9rem; color: #6b7280; margin-top: 0.25rem;">Week of Nov 8</p>
+                        <p style="font-size: 0.85rem; color: #9ca3af; margin-top: 0.5rem;">Most collaborative team member</p>
+                    </div>
+
+                    <div class="tile tile-card">
+                        <div class="beast-babe-image">✨</div>
+                        <p style="font-weight: 600; color: #1f2937;">Emily Davis</p>
+                        <p style="font-size: 0.9rem; color: #6b7280; margin-top: 0.25rem;">Week of Nov 1</p>
+                        <p style="font-size: 0.85rem; color: #9ca3af; margin-top: 0.5rem;">Outstanding problem solver</p>
+                    </div>
+
+                    <div class="tile tile-card">
+                        <div class="beast-babe-image">🚀</div>
+                        <p style="font-weight: 600; color: #1f2937;">James Wilson</p>
+                        <p style="font-size: 0.9rem; color: #6b7280; margin-top: 0.25rem;">Week of Oct 25</p>
+                        <p style="font-size: 0.85rem; color: #9ca3af; margin-top: 0.5rem;">Innovation leader</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Fun Archive Section -->
+            <section class="row-section">
+                <h2 class="section-title">Fun Archive</h2>
+                <div class="tiles-grid">
+                    <div class="tile tile-card">
+                        <div class="tile-header">
+                            <h3>Wins Wall 🎉</h3>
+                        </div>
+                        <div class="tile-content">
+                            <p style="font-size: 0.9rem; margin-bottom: 1rem;">Celebrate team wins and achievements</p>
+                            <button class="btn btn-primary" style="width: 100%;">+ Add Win</button>
+                        </div>
+                    </div>
+
+                    <div class="tile tile-card">
+                        <div class="tile-header">
+                            <h3>Inspiration War 🎨</h3>
+                        </div>
+                        <div class="tile-content">
+                            <p style="font-size: 0.9rem; margin-bottom: 1rem;">Daily creative challenges and voting</p>
+                            <div style="background: linear-gradient(135deg, #fbbf24, #f59e0b); border-radius: 8px; padding: 2rem; text-align: center; margin-bottom: 1rem; color: white;">
+                                <p style="font-weight: 600; margin-bottom: 0.5rem;">Today's Theme</p>
+                                <p style="font-size: 1.2rem;">Minimalist Design</p>
+                            </div>
+                            <button class="btn btn-secondary" style="width: 100%;">View Submissions</button>
+                        </div>
+                    </div>
+
+                    <div class="tile tile-card">
+                        <div class="tile-header">
+                            <h3>Ask The Hive Mind 🐝</h3>
+                        </div>
+                        <div class="tile-content">
+                            <p style="font-size: 0.9rem; margin-bottom: 1rem;">Get answers from the collective wisdom</p>
+                            <button class="btn btn-primary" style="width: 100%;">+ Ask Question</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quick Actions Grid -->
+            <section class="row-section">
+                <h2 class="section-title">Quick Actions</h2>
+                <div class="tiles-grid">
+                    <button style="padding: 2rem; background: linear-gradient(135deg, #6366f1, #8b5cf6); color: white; border: none; border-radius: 12px; cursor: pointer; font-weight: 600; transition: all 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='0 10px 25px rgba(99, 102, 241, 0.3)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 6px rgba(0, 0, 0, 0.1)';">
+                        <div style="font-size: 2rem; margin-bottom: 0.5rem;">🌴</div>
+                        <div>Book OOO</div>
+                    </button>
+                    <button style="padding: 2rem; background: linear-gradient(135deg, #10b981, #059669); color: white; border: none; border-radius: 12px; cursor: pointer; font-weight: 600; transition: all 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='0 10px 25px rgba(16, 185, 129, 0.3)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 6px rgba(0, 0, 0, 0.1)';">
+                        <div style="font-size: 2rem; margin-bottom: 0.5rem;">💬</div>
+                        <div>Start Discussion</div>
+                    </button>
+                    <button style="padding: 2rem; background: linear-gradient(135deg, #ec4899, #be185d); color: white; border: none; border-radius: 12px; cursor: pointer; font-weight: 600; transition: all 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='0 10px 25px rgba(236, 72, 153, 0.3)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 6px rgba(0, 0, 0, 0.1)';">
+                        <div style="font-size: 2rem; margin-bottom: 0.5rem;">🎁</div>
+                        <div>Give Snap</div>
+                    </button>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="#">Quick Links</a>
+                    <a href="#">Help</a>
+                    <a href="#">Feedback</a>
+                </div>
+                <div class="footer-branding">
+                    <p>© 2025 Dashboard. Built with team vibes in mind.</p>
+                </div>
+                <div class="footer-admin">
+                    <a href="#">Admin Panel (only for admins)</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../js/interactions.js"></script>
+</body>
+</html>
