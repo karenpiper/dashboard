@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Wireframe - Work</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/typography.css">
+    <link rel="stylesheet" href="../styles/components.css">
+</head>
+<body>
+    <div class="dashboard-wrapper">
+        <!-- Top Bar -->
+        <header class="top-bar">
+            <div class="top-bar-left">
+                <div class="logo">
+                    <div class="logo-placeholder">LOGO</div>
+                </div>
+                <nav class="navigation">
+                    <a href="../index.html" class="nav-item">Home</a>
+                    <a href="snaps.html" class="nav-item">Snaps</a>
+                    <a href="resources.html" class="nav-item">Resources</a>
+                    <a href="work.html" class="nav-item active">Work</a>
+                    <a href="team.html" class="nav-item">Team</a>
+                    <a href="vibes.html" class="nav-item">Vibes</a>
+                </nav>
+            </div>
+            <div class="top-bar-right">
+                <div class="profile-avatar dropdown">
+                    <div class="avatar-placeholder">A</div>
+                    <div class="dropdown-menu">
+                        <a href="profile.html">Profile</a>
+                        <a href="#">Settings</a>
+                        <a href="#">Notifications</a>
+                        <a href="#">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Page Header with Tabs -->
+            <div class="page-header">
+                <h1 class="page-title">Work</h1>
+            </div>
+
+            <!-- Tabs -->
+            <div style="margin: 2rem 0; display: flex; gap: 1rem; border-bottom: 2px solid #e5e7eb;">
+                <button class="tab active" onclick="switchTab('pipeline')" style="padding: 1rem; border: none; background: none; cursor: pointer; font-weight: 600; color: #6366f1; border-bottom: 3px solid #6366f1; margin-bottom: -2px;">Pipeline</button>
+                <button class="tab" onclick="switchTab('showcase')" style="padding: 1rem; border: none; background: none; cursor: pointer; font-weight: 600; color: #6b7280;">Showcase</button>
+                <button class="tab" onclick="switchTab('portfolio')" style="padding: 1rem; border: none; background: none; cursor: pointer; font-weight: 600; color: #6b7280;">Portfolio</button>
+            </div>
+
+            <!-- Pipeline Tab Content -->
+            <div id="pipeline" class="tab-content" style="display: block;">
+                <h2 style="font-size: 1.3rem; font-weight: 600; margin-bottom: 1.5rem;">Sales Pipeline</h2>
+
+                <div class="pipeline-container">
+                    <!-- New Business Column -->
+                    <div class="pipeline-column">
+                        <div class="pipeline-column-header">
+                            New Business (5)
+                        </div>
+                        <div class="pipeline-card">
+                            <p style="font-weight: 600; margin-bottom: 0.5rem;">TechCorp Mobile App</p>
+                            <p style="font-size: 0.9rem; color: #6b7280; margin-bottom: 0.5rem;">Client: TechCorp</p>
+                            <p style="font-size: 0.85rem; color: #9ca3af;">Team: Design & Dev</p>
+                            <p style="font-size: 0.85rem; color: #9ca3af; margin-top: 0.5rem;">Timeline: 8 weeks</p>
+                        </div>
+
+                        <div class="pipeline-card">
+                            <p style="font-weight: 600; margin-bottom: 0.5rem;">E-commerce Redesign</p>
+                            <p style="font-size: 0.9rem; color: #6b7280; margin-bottom: 0.5rem;">Client: RetailCo</p>
+                            <p style="font-size: 0.85rem; color: #9ca3af;">Team: Design</p>
+                            <p style="font-size: 0.85rem; color: #9ca3af; margin-top: 0.5rem;">Timeline: 6 weeks</p>
+                        </div>
+
+                        <div class="pipeline-card">
+                            <p style="font-weight: 600; margin-bottom: 0.5rem;">SaaS Platform</p>
+                            <p style="font-size: 0.9rem; color: #6b7280; margin-bottom: 0.5rem;">Client: StartupXYZ</p>
+                            <p style="font-size: 0.85rem; color: #9ca3af;">Team: Full Stack</p>
+                            <p style="font-size: 0.85rem; color: #9ca3af; margin-top: 0.5rem;">Timeline: 12 weeks</p>
+                        </div>
+                    </div>
+
+                    <!-- In Progress Column -->
+                    <div class="pipeline-column">
+                        <div class="pipeline-column-header">
+                            In Progress (12)
+                        </div>
+                        <div class="pipeline-card">
+                            <p style="font-weight: 600; margin-bottom: 0.5rem;">Brand Identity</p>
+                            <p style="font-size: 0.9rem; color: #6b7280; margin-bottom: 0.5rem;">Client: HealthApp</p>
+                            <p style="font-size: 0.85rem; color: #9ca3af;">Team: Branding</p>
+                            <p style="font-size: 0.85rem; color: #9ca3af; margin-top: 0.5rem;">Progress: 60%</p>
+                        </div>
+
+                        <div class="pipeline-card">
+                            <p style="font-weight: 600; margin-bottom: 0.5rem;">Website Redesign</p>
+                            <p style="font-size: 0.9rem; color: #6b7280; margin-bottom: 0.5rem;">Client: TechNews</p>
+                            <p style="font-size: 0.85rem; color: #9ca3af;">Team: Frontend</p>
+                            <p style="font-size: 0.85rem; color: #9ca3af; margin-top: 0.5rem;">Progress: 75%</p>
+                        </div>
+
+                        <div class="pipeline-card">
+                            <p style="font-weight: 600; margin-bottom: 0.5rem;">Mobile App Dev</p>
+                            <p style="font-size: 0.9rem; color: #6b7280; margin-bottom: 0.5rem;">Client: FoodDelivery</p>
+                            <p style="font-size: 0.85rem; color: #9ca3af;">Team: Mobile</p>
+                            <p style="font-size: 0.85rem; color: #9ca3af; margin-top: 0.5rem;">Progress: 45%</p>
+                        </div>
+                    </div>
+
+                    <!-- Completed Column -->
+                    <div class="pipeline-column">
+                        <div class="pipeline-column-header">
+                            Completed (24)
+                        </div>
+                        <div class="pipeline-card" style="border-left: 4px solid #10b981;">
+                            <p style="font-weight: 600; margin-bottom: 0.5rem;">Dashboard System</p>
+                            <p style="font-size: 0.9rem; color: #6b7280; margin-bottom: 0.5rem;">Client: AnalyticsInc</p>
+                            <span class="badge badge-success">Won</span>
+                        </div>
+
+                        <div class="pipeline-card" style="border-left: 4px solid #f59e0b;">
+                            <p style="font-weight: 600; margin-bottom: 0.5rem;">Content Platform</p>
+                            <p style="font-size: 0.9rem; color: #6b7280; margin-bottom: 0.5rem;">Client: MediaCorp</p>
+                            <span class="badge badge-warning">Long Lead</span>
+                        </div>
+
+                        <div class="pipeline-card" style="border-left: 4px solid #6b7280;">
+                            <p style="font-weight: 600; margin-bottom: 0.5rem;">Legacy System</p>
+                            <p style="font-size: 0.9rem; color: #6b7280; margin-bottom: 0.5rem;">Client: OldCorp</p>
+                            <span class="badge badge-danger">Lost</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Showcase Tab Content -->
+            <div id="showcase" class="tab-content" style="display: none;">
+                <h2 style="font-size: 1.3rem; font-weight: 600; margin-bottom: 1.5rem;">Featured Cases</h2>
+
+                <!-- Filter -->
+                <div style="margin-bottom: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <button style="padding: 0.5rem 1rem; background-color: #6366f1; color: white; border: none; border-radius: 8px; cursor: pointer;">All</button>
+                    <button style="padding: 0.5rem 1rem; background-color: #f8f9fa; border: 1px solid #e5e7eb; border-radius: 8px; cursor: pointer;">Design</button>
+                    <button style="padding: 0.5rem 1rem; background-color: #f8f9fa; border: 1px solid #e5e7eb; border-radius: 8px; cursor: pointer;">Development</button>
+                    <button style="padding: 0.5rem 1rem; background-color: #f8f9fa; border: 1px solid #e5e7eb; border-radius: 8px; cursor: pointer;">Strategy</button>
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <div class="gallery-image">📱</div>
+                        <div class="gallery-info">
+                            <div class="gallery-title">Mobile App Redesign</div>
+                            <div class="gallery-meta">TechCorp</div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="gallery-image">💼</div>
+                        <div class="gallery-info">
+                            <div class="gallery-title">Enterprise Platform</div>
+                            <div class="gallery-meta">CorpSolutions</div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="gallery-image">🛒</div>
+                        <div class="gallery-info">
+                            <div class="gallery-title">E-commerce Redesign</div>
+                            <div class="gallery-meta">RetailCo</div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="gallery-image">📊</div>
+                        <div class="gallery-info">
+                            <div class="gallery-title">Analytics Dashboard</div>
+                            <div class="gallery-meta">DataInsights</div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="gallery-image">🎨</div>
+                        <div class="gallery-info">
+                            <div class="gallery-title">Brand Identity</div>
+                            <div class="gallery-meta">HealthApp</div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="gallery-image">🌐</div>
+                        <div class="gallery-info">
+                            <div class="gallery-title">Website Redesign</div>
+                            <div class="gallery-meta">TechNews</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portfolio Tab Content -->
+            <div id="portfolio" class="tab-content" style="display: none;">
+                <h2 style="font-size: 1.3rem; font-weight: 600; margin-bottom: 1.5rem;">Portfolio</h2>
+                <p style="color: #6b7280; margin-bottom: 2rem;">A comprehensive collection of our best work and case studies.</p>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <div class="gallery-image">🏆</div>
+                        <div class="gallery-info">
+                            <div class="gallery-title">Award-Winning Campaigns</div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="gallery-image">✨</div>
+                        <div class="gallery-info">
+                            <div class="gallery-title">Featured Projects</div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="gallery-image">🚀</div>
+                        <div class="gallery-info">
+                            <div class="gallery-title">Startup Success Stories</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="#">Quick Links</a>
+                    <a href="#">Help</a>
+                    <a href="#">Feedback</a>
+                </div>
+                <div class="footer-branding">
+                    <p>© 2025 Dashboard. Built with team vibes in mind.</p>
+                </div>
+                <div class="footer-admin">
+                    <a href="#">Admin Panel (only for admins)</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../js/interactions.js"></script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Wireframe - Profile</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/typography.css">
+    <link rel="stylesheet" href="../styles/components.css">
+</head>
+<body>
+    <div class="dashboard-wrapper">
+        <!-- Top Bar -->
+        <header class="top-bar">
+            <div class="top-bar-left">
+                <div class="logo">
+                    <div class="logo-placeholder">LOGO</div>
+                </div>
+                <nav class="navigation">
+                    <a href="../index.html" class="nav-item">Home</a>
+                    <a href="snaps.html" class="nav-item">Snaps</a>
+                    <a href="resources.html" class="nav-item">Resources</a>
+                    <a href="work.html" class="nav-item">Work</a>
+                    <a href="team.html" class="nav-item">Team</a>
+                    <a href="vibes.html" class="nav-item">Vibes</a>
+                </nav>
+            </div>
+            <div class="top-bar-right">
+                <div class="profile-avatar dropdown">
+                    <div class="avatar-placeholder">A</div>
+                    <div class="dropdown-menu">
+                        <a href="profile.html">Profile</a>
+                        <a href="#">Settings</a>
+                        <a href="#">Notifications</a>
+                        <a href="#">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div style="max-width: 600px; margin: 0 auto;">
+                <!-- Profile Header -->
+                <div style="background-color: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 2rem; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); text-align: center; margin-bottom: 2rem;">
+                    <div style="width: 100px; height: 100px; border-radius: 50%; background: linear-gradient(135deg, #ec4899, #f43f5e); display: flex; align-items: center; justify-content: center; color: white; font-size: 2.5rem; margin: 0 auto 1.5rem;">
+                        A
+                    </div>
+                    <h1 style="font-size: 1.75rem; font-weight: 700; color: #1f2937; margin-bottom: 0.5rem;">Alex Rivera</h1>
+                    <p style="font-size: 1.05rem; color: #6b7280; margin-bottom: 1.5rem;">Senior Product Designer</p>
+                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                        <button style="padding: 0.75rem 1.5rem; background-color: #6366f1; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 600;">Edit Profile</button>
+                        <button style="padding: 0.75rem 1.5rem; background-color: #f8f9fa; color: #1f2937; border: 1px solid #e5e7eb; border-radius: 8px; cursor: pointer; font-weight: 600;">Settings</button>
+                    </div>
+                </div>
+
+                <!-- Profile Sections -->
+                <section style="margin-bottom: 2rem;">
+                    <h2 style="font-size: 1.3rem; font-weight: 600; margin-bottom: 1rem;">Personal Information</h2>
+                    <div style="background-color: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 1.5rem; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);">
+                        <div style="display: grid; gap: 1rem;">
+                            <div>
+                                <label style="display: block; font-size: 0.9rem; font-weight: 600; color: #6b7280; margin-bottom: 0.5rem;">Email</label>
+                                <p style="color: #1f2937; margin: 0;">alex.rivera@company.com</p>
+                            </div>
+                            <div>
+                                <label style="display: block; font-size: 0.9rem; font-weight: 600; color: #6b7280; margin-bottom: 0.5rem;">Department</label>
+                                <p style="color: #1f2937; margin: 0;">Design</p>
+                            </div>
+                            <div>
+                                <label style="display: block; font-size: 0.9rem; font-weight: 600; color: #6b7280; margin-bottom: 0.5rem;">Started</label>
+                                <p style="color: #1f2937; margin: 0;">January 15, 2022</p>
+                            </div>
+                            <div>
+                                <label style="display: block; font-size: 0.9rem; font-weight: 600; color: #6b7280; margin-bottom: 0.5rem;">Time Zone</label>
+                                <p style="color: #1f2937; margin: 0;">EST (UTC -5)</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Preferences -->
+                <section style="margin-bottom: 2rem;">
+                    <h2 style="font-size: 1.3rem; font-weight: 600; margin-bottom: 1rem;">Preferences</h2>
+                    <div style="background-color: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 1.5rem; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);">
+                        <div style="display: grid; gap: 1.5rem;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 1rem; border-bottom: 1px solid #e5e7eb;">
+                                <div>
+                                    <p style="font-weight: 600; color: #1f2937; margin: 0;">Dark Mode</p>
+                                    <p style="font-size: 0.9rem; color: #6b7280; margin: 0.25rem 0 0 0;">Easier on the eyes</p>
+                                </div>
+                                <input type="checkbox" style="cursor: pointer;">
+                            </div>
+                            <div style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 1rem; border-bottom: 1px solid #e5e7eb;">
+                                <div>
+                                    <p style="font-weight: 600; color: #1f2937; margin: 0;">Email Notifications</p>
+                                    <p style="font-size: 0.9rem; color: #6b7280; margin: 0.25rem 0 0 0;">Get updates via email</p>
+                                </div>
+                                <input type="checkbox" checked style="cursor: pointer;">
+                            </div>
+                            <div style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 1rem; border-bottom: 1px solid #e5e7eb;">
+                                <div>
+                                    <p style="font-weight: 600; color: #1f2937; margin: 0;">Push Notifications</p>
+                                    <p style="font-size: 0.9rem; color: #6b7280; margin: 0.25rem 0 0 0;">Real-time updates</p>
+                                </div>
+                                <input type="checkbox" checked style="cursor: pointer;">
+                            </div>
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <div>
+                                    <p style="font-weight: 600; color: #1f2937; margin: 0;">Slack Integration</p>
+                                    <p style="font-size: 0.9rem; color: #6b7280; margin: 0.25rem 0 0 0;">Send updates to Slack</p>
+                                </div>
+                                <input type="checkbox" style="cursor: pointer;">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- My Snaps -->
+                <section style="margin-bottom: 2rem;">
+                    <h2 style="font-size: 1.3rem; font-weight: 600; margin-bottom: 1rem;">My Snaps</h2>
+                    <div style="background-color: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 1.5rem; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);">
+                        <div style="display: grid; gap: 0.75rem;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.75rem 0; border-bottom: 1px solid #e5e7eb;">
+                                <div>
+                                    <p style="font-weight: 600; color: #1f2937; margin: 0;">Snaps Received</p>
+                                </div>
+                                <p style="font-size: 1.3rem; font-weight: 700; color: #6366f1; margin: 0;">47</p>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.75rem 0; border-bottom: 1px solid #e5e7eb;">
+                                <div>
+                                    <p style="font-weight: 600; color: #1f2937; margin: 0;">Snaps Given</p>
+                                </div>
+                                <p style="font-size: 1.3rem; font-weight: 700; color: #6366f1; margin: 0;">32</p>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.75rem 0;">
+                                <div>
+                                    <p style="font-weight: 600; color: #1f2937; margin: 0;">Rank</p>
+                                </div>
+                                <p style="font-size: 1.3rem; font-weight: 700; color: #6366f1; margin: 0;">#5</p>
+                            </div>
+                        </div>
+                        <button style="width: 100%; padding: 0.75rem; background-color: #6366f1; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 600; margin-top: 1rem;">View All My Snaps</button>
+                    </div>
+                </section>
+
+                <!-- Account Settings -->
+                <section style="margin-bottom: 2rem;">
+                    <h2 style="font-size: 1.3rem; font-weight: 600; margin-bottom: 1rem;">Account</h2>
+                    <div style="background-color: white; border: 1px solid #e5e7eb; border-radius: 12px; padding: 1.5rem; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);">
+                        <div style="display: grid; gap: 1rem;">
+                            <button style="padding: 0.75rem; background-color: #f8f9fa; border: 1px solid #e5e7eb; border-radius: 8px; cursor: pointer; font-weight: 600; color: #1f2937; transition: all 0.2s ease;" onmouseover="this.style.backgroundColor='#e5e7eb';" onmouseout="this.style.backgroundColor='#f8f9fa';">Change Password</button>
+                            <button style="padding: 0.75rem; background-color: #f8f9fa; border: 1px solid #e5e7eb; border-radius: 8px; cursor: pointer; font-weight: 600; color: #1f2937; transition: all 0.2s ease;" onmouseover="this.style.backgroundColor='#e5e7eb';" onmouseout="this.style.backgroundColor='#f8f9fa';">Two-Factor Authentication</button>
+                            <button style="padding: 0.75rem; background-color: #f8f9fa; border: 1px solid #e5e7eb; border-radius: 8px; cursor: pointer; font-weight: 600; color: #1f2937; transition: all 0.2s ease;" onmouseover="this.style.backgroundColor='#e5e7eb';" onmouseout="this.style.backgroundColor='#f8f9fa';">Download My Data</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Logout -->
+                <section style="margin-bottom: 2rem;">
+                    <button style="width: 100%; padding: 0.75rem; background-color: #fee2e2; color: #991b1b; border: 1px solid #fecaca; border-radius: 8px; cursor: pointer; font-weight: 600; transition: all 0.2s ease;" onmouseover="this.style.backgroundColor='#fecaca';" onmouseout="this.style.backgroundColor='#fee2e2';">Logout</button>
+                </section>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="#">Quick Links</a>
+                    <a href="#">Help</a>
+                    <a href="#">Feedback</a>
+                </div>
+                <div class="footer-branding">
+                    <p>© 2025 Dashboard. Built with team vibes in mind.</p>
+                </div>
+                <div class="footer-admin">
+                    <a href="#">Admin Panel (only for admins)</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../js/interactions.js"></script>
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Wireframe - Snaps</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/typography.css">
+    <link rel="stylesheet" href="../styles/components.css">
+</head>
+<body>
+    <div class="dashboard-wrapper">
+        <!-- Top Bar -->
+        <header class="top-bar">
+            <div class="top-bar-left">
+                <div class="logo">
+                    <div class="logo-placeholder">LOGO</div>
+                </div>
+                <nav class="navigation">
+                    <a href="../index.html" class="nav-item">Home</a>
+                    <a href="snaps.html" class="nav-item active">Snaps</a>
+                    <a href="resources.html" class="nav-item">Resources</a>
+                    <a href="work.html" class="nav-item">Work</a>
+                    <a href="team.html" class="nav-item">Team</a>
+                    <a href="vibes.html" class="nav-item">Vibes</a>
+                </nav>
+            </div>
+            <div class="top-bar-right">
+                <div class="profile-avatar dropdown">
+                    <div class="avatar-placeholder">A</div>
+                    <div class="dropdown-menu">
+                        <a href="profile.html">Profile</a>
+                        <a href="#">Settings</a>
+                        <a href="#">Notifications</a>
+                        <a href="#">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Page Header -->
+            <div class="page-header">
+                <h1 class="page-title">Snaps</h1>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 250px 1fr; gap: 2rem;">
+                <!-- Left Sidebar with Filters -->
+                <aside class="filter-sidebar">
+                    <div class="filter-group">
+                        <div class="filter-title">View Options</div>
+                        <div class="filter-item">
+                            <input type="checkbox" id="all-snaps" value="all" checked>
+                            <label for="all-snaps">All Snaps</label>
+                        </div>
+                        <div class="filter-item">
+                            <input type="checkbox" id="about-me" value="about-me">
+                            <label for="about-me">Snaps About Me</label>
+                        </div>
+                        <div class="filter-item">
+                            <input type="checkbox" id="gave" value="gave">
+                            <label for="gave">Snaps I Gave</label>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <div class="filter-title">Time Period</div>
+                        <div class="filter-item">
+                            <input type="checkbox" id="this-week" value="this-week" checked>
+                            <label for="this-week">This Week</label>
+                        </div>
+                        <div class="filter-item">
+                            <input type="checkbox" id="this-month" value="this-month">
+                            <label for="this-month">This Month</label>
+                        </div>
+                        <div class="filter-item">
+                            <input type="checkbox" id="all-time" value="all-time">
+                            <label for="all-time">All Time</label>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <div class="filter-title">Stats</div>
+                        <div style="padding: 1rem 0;">
+                            <div class="stat-card">
+                                <div class="stat-value">47</div>
+                                <div class="stat-title">Snaps This Month</div>
+                            </div>
+                        </div>
+                        <div style="padding: 1rem 0; border-top: 1px solid #e5e7eb;">
+                            <h4 style="font-size: 0.95rem; margin-bottom: 0.75rem;">Snap Leader</h4>
+                            <div class="leaderboard">
+                                <div class="leaderboard-item">
+                                    <div class="leaderboard-rank">1</div>
+                                    <div class="leaderboard-info">
+                                        <div class="leaderboard-name">Sarah Johnson</div>
+                                    </div>
+                                    <div class="leaderboard-count">12</div>
+                                </div>
+                                <div class="leaderboard-item">
+                                    <div class="leaderboard-rank">2</div>
+                                    <div class="leaderboard-info">
+                                        <div class="leaderboard-name">Mike Chen</div>
+                                    </div>
+                                    <div class="leaderboard-count">10</div>
+                                </div>
+                                <div class="leaderboard-item">
+                                    <div class="leaderboard-rank">3</div>
+                                    <div class="leaderboard-info">
+                                        <div class="leaderboard-name">Emily Davis</div>
+                                    </div>
+                                    <div class="leaderboard-count">9</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Main Feed -->
+                <section>
+                    <div class="feed-list">
+                        <!-- Snap Card 1 -->
+                        <div class="feed-card" data-category="all">
+                            <div class="feed-header">
+                                <div class="feed-avatar">SJ</div>
+                                <div class="feed-info">
+                                    <div class="feed-name">Sarah Johnson</div>
+                                    <div class="feed-meta">gave a snap • 2 days ago</div>
+                                </div>
+                                <span class="badge badge-primary">Anonymous</span>
+                            </div>
+                            <div class="feed-body">
+                                Amazing presentation skills! Your ability to communicate complex ideas in a clear and engaging way really made an impact on the client meeting. Keep up the great work!
+                            </div>
+                            <div class="feed-footer">
+                                <button class="feed-action">👍 Like</button>
+                                <button class="feed-action">💬 Reply</button>
+                                <button class="feed-action">⭐ Save</button>
+                            </div>
+                        </div>
+
+                        <!-- Snap Card 2 -->
+                        <div class="feed-card" data-category="all">
+                            <div class="feed-header">
+                                <div class="feed-avatar">MC</div>
+                                <div class="feed-info">
+                                    <div class="feed-name">Mike Chen</div>
+                                    <div class="feed-meta">gave a snap • 3 days ago</div>
+                                </div>
+                                <span class="badge badge-success">Public</span>
+                            </div>
+                            <div class="feed-body">
+                                Love your energy in meetings! The enthusiasm you bring to brainstorming sessions is infectious and really helps the team stay motivated and creative. Thank you for being such a positive force!
+                            </div>
+                            <div class="feed-footer">
+                                <button class="feed-action">👍 Like</button>
+                                <button class="feed-action">💬 Reply</button>
+                                <button class="feed-action">⭐ Save</button>
+                            </div>
+                        </div>
+
+                        <!-- Snap Card 3 -->
+                        <div class="feed-card" data-category="all">
+                            <div class="feed-header">
+                                <div class="feed-avatar">ED</div>
+                                <div class="feed-info">
+                                    <div class="feed-name">Emily Davis</div>
+                                    <div class="feed-meta">gave a snap • 4 days ago</div>
+                                </div>
+                                <span class="badge badge-primary">Anonymous</span>
+                            </div>
+                            <div class="feed-body">
+                                Great work on the project! The attention to detail in your designs was outstanding, and your collaboration made the whole team's work better. Fantastic contribution!
+                            </div>
+                            <div class="feed-footer">
+                                <button class="feed-action">👍 Like</button>
+                                <button class="feed-action">💬 Reply</button>
+                                <button class="feed-action">⭐ Save</button>
+                            </div>
+                        </div>
+
+                        <!-- Snap Card 4 -->
+                        <div class="feed-card" data-category="all">
+                            <div class="feed-header">
+                                <div class="feed-avatar">JW</div>
+                                <div class="feed-info">
+                                    <div class="feed-name">James Wilson</div>
+                                    <div class="feed-meta">gave a snap • 5 days ago</div>
+                                </div>
+                                <span class="badge badge-success">Public</span>
+                            </div>
+                            <div class="feed-body">
+                                Exceptional problem-solving skills! The way you approached the client's challenge and delivered a creative solution was impressive. You're a true asset to the team!
+                            </div>
+                            <div class="feed-footer">
+                                <button class="feed-action">👍 Like</button>
+                                <button class="feed-action">💬 Reply</button>
+                                <button class="feed-action">⭐ Save</button>
+                            </div>
+                        </div>
+
+                        <!-- Snap Card 5 -->
+                        <div class="feed-card" data-category="all">
+                            <div class="feed-header">
+                                <div class="feed-avatar">LS</div>
+                                <div class="feed-info">
+                                    <div class="feed-name">Lisa Smith</div>
+                                    <div class="feed-meta">gave a snap • 1 week ago</div>
+                                </div>
+                                <span class="badge badge-primary">Anonymous</span>
+                            </div>
+                            <div class="feed-body">
+                                Incredible leadership during the project! Your guidance helped our team navigate challenges with confidence. Thank you for being such an inspiring leader!
+                            </div>
+                            <div class="feed-footer">
+                                <button class="feed-action">👍 Like</button>
+                                <button class="feed-action">💬 Reply</button>
+                                <button class="feed-action">⭐ Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Floating Add Button -->
+        <button class="floating-btn" onclick="openModal('add-snap-modal')">+</button>
+
+        <!-- Add Snap Modal -->
+        <div class="modal-overlay" id="add-snap-modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Add a Snap</h2>
+                    <button class="modal-close" onclick="closeModal('add-snap-modal')">×</button>
+                </div>
+                <div class="modal-body">
+                    <form id="snap-form">
+                        <div style="margin-bottom: 1rem;">
+                            <label style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Who do you want to snap?</label>
+                            <input type="text" placeholder="Team member name" style="width: 100%; padding: 0.75rem; border: 1px solid #e5e7eb; border-radius: 8px;">
+                        </div>
+                        <div style="margin-bottom: 1rem;">
+                            <label style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Your message</label>
+                            <textarea placeholder="Share your appreciation..." style="width: 100%; padding: 0.75rem; border: 1px solid #e5e7eb; border-radius: 8px; min-height: 100px; font-family: inherit;"></textarea>
+                        </div>
+                        <div style="margin-bottom: 1rem;">
+                            <label style="display: flex; align-items: center; gap: 0.5rem;">
+                                <input type="checkbox">
+                                <span>Send anonymously</span>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" onclick="closeModal('add-snap-modal')">Cancel</button>
+                    <button class="btn btn-primary">Send Snap</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="#">Quick Links</a>
+                    <a href="#">Help</a>
+                    <a href="#">Feedback</a>
+                </div>
+                <div class="footer-branding">
+                    <p>© 2025 Dashboard. Built with team vibes in mind.</p>
+                </div>
+                <div class="footer-admin">
+                    <a href="#">Admin Panel (only for admins)</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../js/interactions.js"></script>
+</body>
+</html>
