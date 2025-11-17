@@ -1,0 +1,39 @@
+.navigation {
+  display: flex;
+  gap: 2rem;
+}
+
+.navItem {
+  text-decoration: none;
+  color: var(--text-secondary);
+  font-weight: 500;
+  transition: var(--transition);
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.navItem:hover {
+  color: var(--primary-color);
+}
+
+.navItem.active {
+  color: var(--primary-color);
+}
+
+.navItem.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: var(--primary-color);
+  border-radius: 1.5px;
+}
+
+@media (max-width: 768px) {
+  .navigation {
+    gap: 1rem;
+  }
+}
+

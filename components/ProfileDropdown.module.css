@@ -1,0 +1,61 @@
+.profileAvatar {
+  position: relative;
+  cursor: pointer;
+}
+
+.avatarButton {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.avatarPlaceholder {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent-color), var(--secondary-color));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  transition: var(--transition);
+}
+
+.avatarPlaceholder:hover {
+  transform: scale(1.05);
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  min-width: 150px;
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+  z-index: 200;
+}
+
+.dropdownMenu a {
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  color: var(--text-primary);
+  transition: var(--transition);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.dropdownMenu a:last-child {
+  border-bottom: none;
+}
+
+.dropdownMenu a:hover {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+}
+
